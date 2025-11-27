@@ -16,7 +16,7 @@ namespace CubeIntersection.Application.Services.Implementations
             if (b == null) throw new ArgumentNullException(nameof(b));
 
             var volume = IntersectionVolume(a, b);
-            var intersects = volume > 0.0; // consider >0 as intersection; touching (volume==0) is non-intersecting volume
+            var intersects = volume > 0.0;
             return (intersects, volume);
         }
 
