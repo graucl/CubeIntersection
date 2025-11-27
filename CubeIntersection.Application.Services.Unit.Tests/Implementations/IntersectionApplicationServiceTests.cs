@@ -7,7 +7,7 @@ namespace CubeIntersection.Application.Services.Implementations.Unit.Tests
     public class IntersectionApplicationServiceTests
     {
         [Fact]
-        public void CubesSeparated_NoIntersection()
+        public void Calculate_CubesSeparated_NoIntersection_NoVolume()
         {
             var calc = new IntersectionCalculator();
             var a = new Cube(new Point3D(0, 0, 0), 1);
@@ -19,9 +19,8 @@ namespace CubeIntersection.Application.Services.Implementations.Unit.Tests
             Assert.Equal(0, volume);
         }
 
-
         [Fact]
-        public void CubesTouchOnFace_VolumeZero()
+        public void Calculate_CubesTouchOnFace_NoIntersection_NoVolume()
         {
             var calc = new IntersectionCalculator();
             var a = new Cube(new Point3D(0, 0, 0), 2);
@@ -33,9 +32,8 @@ namespace CubeIntersection.Application.Services.Implementations.Unit.Tests
             Assert.Equal(0, volume);
         }
 
-
         [Fact]
-        public void CubesPartialOverlap_CorrectVolume()
+        public void Calculate_IntersectTrue_CorrectVolume()
         {
             var calc = new IntersectionCalculator();
             var a = new Cube(new Point3D(0, 0, 0), 2);

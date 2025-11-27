@@ -10,7 +10,6 @@ builder.Services.AddControllers();
 builder.Services.AddSingleton<IIntersectionCalculator, IntersectionCalculator>();
 builder.Services.AddScoped<IIntersectionApplicationService, IntersectionApplicationService>();
 
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
