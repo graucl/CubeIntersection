@@ -8,8 +8,18 @@ using System.Threading.Tasks;
 
 namespace CubeIntersection.Application.Services.Implementations
 {
-    public class CubeIntersectionService : ICubeIntersectionService
+    public class IntersectionCalculator : IIntersectionCalculator
     {
+        public (bool intersects, double volume) Calculate(Cube a, Cube b)
+        {
+            if (a == null) throw new ArgumentNullException(nameof(a));
+            if (b == null) throw new ArgumentNullException(nameof(b));
+
+            var volume = IntersectionVolume(a, b);
+            var intersects = volume > 0.0;
+            return (intersects, volume);
+        }
+
         public double IntersectionVolume(Cube a, Cube b)
         {
             var ox = OverlapLength(a.RangeX(), b.RangeX());
@@ -17,15 +27,6 @@ namespace CubeIntersection.Application.Services.Implementations
             var oz = OverlapLength(a.RangeZ(), b.RangeZ());
 
             return ox * oy * oz;
-        }
-
-        public bool Intersects(Cube a, Cube b)
-        {
-            var ox = OverlapLength(a.RangeX(), b.RangeX());
-            var oy = OverlapLength(a.RangeY(), b.RangeY());
-            var oz = OverlapLength(a.RangeZ(), b.RangeZ());
-
-            return ox > 0 && oy > 0 && oz > 0;
         }
 
         private static double OverlapLength((double min, double max) r1, (double min, double max) r2)

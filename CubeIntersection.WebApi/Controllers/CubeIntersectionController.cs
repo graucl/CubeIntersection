@@ -25,7 +25,6 @@ namespace CubeIntersection.WebApi.Controllers
 
             var result = _service.Intersect(req);
 
-
             return Ok(new IntersectionResultDto { Intersects = result.Intersects, IntersectedVolume = result.IntersectedVolume });
         }
     }
