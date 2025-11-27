@@ -8,7 +8,7 @@ namespace CubeIntersection.Distributed.Dtos
 {
     public sealed class IntersectRequest
     {
-        public CubeDto A { get; set; }
-        public CubeDto B { get; set; }
+        public CubeDto? A { get; set; }
+        public CubeDto? B { get; set; }
     }
 }

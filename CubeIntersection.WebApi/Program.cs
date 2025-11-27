@@ -1,4 +1,5 @@
 using CubeIntersection.Application.Services.Contracts;
+using CubeIntersection.Application.Services.Implementations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,10 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-//builder.Services.AddSingleton<IIntersectionCalculator, IntersectionCalculator>();
-//builder.Services.AddScoped<IIntersectionApplicationService, IntersectionApplicationService>();
+builder.Services.AddSingleton<IIntersectionCalculator, IntersectionCalculator>();
+builder.Services.AddScoped<IIntersectionApplicationService, IntersectionApplicationService>();
 
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
