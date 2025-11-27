@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubeIntersection.Applicatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubeIntersection.Distributed.Dtos", "CubeIntersection.Distributed.Dtos\CubeIntersection.Distributed.Dtos.csproj", "{B52D564C-5911-47CE-9073-E3C9AC29729D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubeIntersection.Application.Services.Unit.Tests", "CubeIntersection.Application.Services.Unit.Tests\CubeIntersection.Application.Services.Unit.Tests.csproj", "{ADC1A50E-4CEC-4B5A-8142-5060300F25A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{2F185F94-64C7-448E-99BF-A093457157DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,10 @@ Global
 		{B52D564C-5911-47CE-9073-E3C9AC29729D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B52D564C-5911-47CE-9073-E3C9AC29729D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B52D564C-5911-47CE-9073-E3C9AC29729D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADC1A50E-4CEC-4B5A-8142-5060300F25A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADC1A50E-4CEC-4B5A-8142-5060300F25A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADC1A50E-4CEC-4B5A-8142-5060300F25A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADC1A50E-4CEC-4B5A-8142-5060300F25A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +60,7 @@ Global
 		{8D64F42E-3B41-43D9-8B7D-69817046C26E} = {7F6C6852-EC11-45BD-82A7-3A6FF1329A97}
 		{D565C653-320B-4F4B-A913-48B1362807CB} = {A68A6A32-D965-4AB6-8411-7B32A3F0FBDE}
 		{B52D564C-5911-47CE-9073-E3C9AC29729D} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{ADC1A50E-4CEC-4B5A-8142-5060300F25A6} = {2F185F94-64C7-448E-99BF-A093457157DF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {57B8671B-7079-4C4A-BA3B-7D009D1E3E05}
