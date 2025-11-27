@@ -10,4 +10,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CubeIntersection.Application\CubeIntersection.Application.Services.csproj" />
+    <ProjectReference Include="..\CubeIntersection.Distributed.Dtos\CubeIntersection.Distributed.Dtos.csproj" />
+  </ItemGroup>
+
 </Project>
